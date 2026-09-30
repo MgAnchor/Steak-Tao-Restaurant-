@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steak Tao Restaurant | Best Steak & Burgers in Koh Tao</title>
+    <meta name="description" content="Steak Tao Restaurant in Mae Haad, Koh Tao. Enjoy fresh tenderloin steaks, juicy burgers, and cold drinks. Rated 4.9 Stars on Google!">
+    <style>
+        /* CSS Styles */
+        :root {
+            --primary-color: #d9534f;
+            --dark-color: #1a1a1a;
+            --light-color: #f8f9fa;
+            --accent-color: #ffc107;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-color);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            max-width: 600px;
+        }
+
+        .rating-badge {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            border: 1px solid var(--accent-color);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background-color: #c9302c;
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: var(--accent-color);
+            position: relative;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .menu-card {
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #333;
+            transition: transform 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-card-body {
+            padding: 20px;
+        }
+
+        .menu-card h3 {
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .menu-card p {
+            color: #aaa;
+            font-size: 0.95rem;
+        }
+
+        .promo-banner {
+            background-color: #2b1f1d;
+            border: 2px dashed var(--accent-color);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .promo-banner h3 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .info-box {
+            background: #222;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .info-box h3 {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            border-top: 1px solid #222;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+            header p { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Steak Tao Restaurant</h1>
+        <p>Fresh & Delicious Tenderloin Steaks, Juicy Burgers, & Post-Dive Specials in Koh Tao</p>
+        <div class="rating-badge">
+            ⭐ 4.9 / 5.0 Rating on Google Maps (2,500+ Reviews)
+        </div>
+        <div>
+            <a href="https://wa.me/66820054478" class="btn btn-whatsapp" target="_blank">📲 WhatsApp Us</a>
+            <a href="https://maps.google.com/maps?cid=8314223321460205003" class="btn" target="_blank">📍 Get Directions</a>
+        </div>
+    </header>
+
+    <!-- Special Offer Section -->
+    <section id="offers">
+        <div class="promo-banner">
+            <h3>🤿 Special Diver's Offer!</h3>
+            <p style="font-size: 1.2rem; margin-top: 10px;">Order any Main Course (Steak or Burger) & get a <strong>FREE DRINK</strong> (Draft Beer, Soft Drink, or Fruit Juice)!</p>
+            <p style="color: #aaa; margin-top: 5px;">*Show your Diver's Coupon to your server when ordering.</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2 class="section-title">Our Highlights</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <div class="menu-card-body">
+                    <h3>🥩 Tenderloin Steak</h3>
+                    <p>Cooked to perfection, served with your choice of sides and delicious steak sauces.</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card-body">
+                    <h3>🍔 Signature Beef Burger</h3>
+                    <p>Juicy homemade beef patty with fresh ingredients in a soft toasted bun.</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card-body">
+                    <h3>🐟 Fresh Tuna Carpaccio</h3>
+                    <p>Freshly sliced tuna prepared with signature seasonings for a delightful fresh taste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info & Location Section -->
+    <section id="info">
+        <h2 class="section-title">Visit Us</h2>
+        <div class="info-grid">
+            <div class="info-box">
+                <h3>📍 Location & Hours</h3>
+                <p><strong>Address:</strong> 4/34, Moo 3, Mae Haad, Koh Tao, Surat Thani 84360</p>
+                <p style="margin-top: 10px;"><strong>Opening Hours:</strong></p>
+                <p>Monday - Sunday: 4:00 PM - 12:00 AM (Midnight)</p>
+            </div>
+            <div class="info-box">
+                <h3>📞 Contact Us</h3>
+                <p><strong>Phone / WhatsApp:</strong> +66 82 005 4478</p>
+                <p style="margin-top: 10px;"><strong>Delivery & Takeout:</strong> Available</p>
+                <div style="margin-top: 20px;">
+                    <a href="https://wa.me/66820054478" class="btn btn-whatsapp" style="width: 100%; text-align: center;">Message on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Steak Tao Restaurant, Koh Tao. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
